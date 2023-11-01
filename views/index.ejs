@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=	" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <title>Document</title>
+  </head>
+  <body class="mainContainer">
+    <div class="header"><%- include("includes/header") %></div>
+    <div class="main">
+      <% for (let i = 0; i < items.length; i++) { %> <% const item = items[i] %>
+      <%-include("includes/itemDisplay", {name: item.name, image: item.image,
+      price: item.priceUsd, star: item.starRating}) %> <% } %>
+    </div>
+  </body>
+</html>

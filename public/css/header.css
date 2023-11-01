@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.title {
+  text-align: center;
+  font-family: "Kaushan Script", cursive;
+  color: #1a3434;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navMenu {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 0;
+  padding: 7px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.navMenu a {
+  color: #1a3434;
+  text-decoration: none;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  font-weight: 500;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding: 7px;
+}
+
+.navMenu a:hover {
+  color: #d1b000;
+}
+
+@media (max-width: 800px) {
+  /* Change the direction of the flex items to be in a column */
+  .navMenu {
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.6em;
+  }
+}
