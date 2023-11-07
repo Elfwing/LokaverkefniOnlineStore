@@ -34,15 +34,15 @@
   {
     "id": 5,
     "name": "Sorcerer's Robe of Shadows",
-    "image": "path/to/sorcerers_robe.jpg",
+    "image": "images/shadowRobe.jpg",
     "priceUsd": 69.99,
     "starRating": 4.5,
     "category": "MagicObject."
   },
-  {
+  { 
     "id": 6,
     "name": "Elixir of Eternal Youth",
-    "image": "path/to/elixir_of_youth.jpg",
+    "image": "images/youthElixir.jpg",
     "priceUsd": 99.99,
     "starRating": 5.0,
     "category": "Potions"
