@@ -5,6 +5,8 @@ import dotenv from "dotenv";
 import session from "express-session";
 import { fileURLToPath } from "url";
 import { router as frontPageRouter } from "./routes/index.js";
+import { router as loginRouter } from "./routes/login.js";
+import { router as registerRouter } from "./routes/register.js";
 
 const app = express();
 dotenv.config();
@@ -40,6 +42,8 @@ app.use(
 
 //routers
 app.use("/", frontPageRouter);
+app.use("/login", loginRouter);
+app.use("/register", registerRouter);
 
 // errors: page not found
 app.use((req, res, next) => {
