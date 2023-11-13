@@ -16,20 +16,10 @@
   text-overflow: ellipsis;
 }
 
-.star {
-  width: 30px;
-  height: 30px;
-  margin: -3px;
-}
-.starHalf {
-  width: 16px;
-  height: 30px;
-  margin: -3px;
-  object-fit: cover;
-  object-position: left;
-}
-
 /*css on star symbols*/
 .material-symbols-outlined {
   font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+  width: 30px;
+  height: 30px;
+  margin: -5px;
 }

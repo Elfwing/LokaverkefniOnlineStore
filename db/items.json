@@ -29,7 +29,7 @@
     "image": "images/phoenixFeather.jpg",
     "priceUsd": 14.99,
     "starRating": 4.0,
-    "category": "MagicObject"
+    "category": "Objects"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "image": "images/shadowRobe.jpg",
     "priceUsd": 69.99,
     "starRating": 4.5,
-    "category": "MagicObject."
+    "category": "Clothing"
   },
   { 
     "id": 6,
@@ -69,7 +69,7 @@
     "image": "path/to/oracles_mirror.jpg",
     "priceUsd": 59.99,
     "starRating": 4.5,
-    "category": "MagicObject"
+    "category": "Objects"
   },
   {
     "id": 10,

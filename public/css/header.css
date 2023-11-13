@@ -4,7 +4,6 @@
 .title {
   text-align: center;
   font-family: "Kaushan Script", cursive;
-  color: #1a3434;
   text-decoration: none;
   font-size: 20px;
 }
@@ -19,7 +18,6 @@
 }
 
 .navMenu a {
-  color: #1a3434;
   text-decoration: none;
   font-size: 1.6em;
   text-transform: uppercase;
@@ -29,7 +27,7 @@
 }
 
 .navMenu a:hover {
-  color: #d1b000;
+  color: #b49a63;
 }
 
 @media (max-width: 800px) {

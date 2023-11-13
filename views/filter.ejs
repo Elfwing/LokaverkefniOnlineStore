@@ -13,7 +13,7 @@
   <body class="mainContainer">
     <div class="header"><%- include("includes/header",{categorys: categorys}) %></div>
     <div class="main">
-      <% for (let i = 0; i < items.length; i++) { %> <% const item = items[i] %>
+      <% for (let i = 0; i < filtered.length; i++) { %> <% const item = filtered[i] %>
       <%-include("includes/itemDisplay", {name: item.name, image: item.image,
       price: item.priceUsd, star: item.starRating}) %> <% } %>
     </div>
