@@ -6,11 +6,23 @@
     #A8A296 **/
 
 body {
-  background-color: #CBC19F;
-  color: #574B27;
+  background-color: #cbc19f;
+  color: #574b27;
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 a {
-  color: #574B27;
+  color: #574b27;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  font-size: 28px;
+  padding: 10px 15px;
+  margin: 10px;
+  color: #574b27;
+  border-radius: 10px;
+  background-color: #a8a296;
+  transition: 1s;
 }

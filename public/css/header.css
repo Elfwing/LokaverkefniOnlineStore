@@ -8,6 +8,7 @@
   font-size: 20px;
 }
 
+/*css for navbar*/
 .navMenu {
   display: flex;
   flex-direction: row;
@@ -30,11 +31,21 @@
   color: #b49a63;
 }
 
+/* Change the direction of the flex items to be in a column */
 @media (max-width: 800px) {
-  /* Change the direction of the flex items to be in a column */
   .navMenu {
     flex-direction: column;
     text-align: center;
     font-size: 1.6em;
   }
+}
+
+.loginButton:hover {
+  padding: 10px 25px;
+  color: #a8a296;
+  background-color: #574b27;
+  transition: 1s;
+}
+.cart {
+  font-size: 50px;
 }

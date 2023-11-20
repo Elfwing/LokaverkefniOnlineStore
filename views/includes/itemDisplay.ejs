@@ -1,14 +1,14 @@
 <div class="itemDiv">
-  <img src=<%=image%> alt="" class="itemImage" />
-  <p class="itemName" title=<%=name%> ><%= name %></p>
-  <div class="starS">
-    <% for (let i = 0; i < star; i++) { %>
-      <% if (i+1 > star) { %>
-        <span class="material-symbols-outlined">star_half</span>
+  <a href="">
+    <img src="<%=image%>" alt="" class="itemImage" />
+    <p class="itemName" title="<%=name%>"><%= name %></p>
+    <div class="starS">
+      <% for (let i = 0; i < star; i++) { %> <% if (i+1 > star) { %>
+      <span class="material-symbols-outlined">star_half</span>
       <% } else { %>
-        <span class="material-symbols-outlined">star</span>
-      <% } %>
-    <% } %>
-  </div>
-  <p class="itemPrice"><%= price %>&dollar;</p>
+      <span class="material-symbols-outlined">star</span>
+      <% } %> <% } %>
+    </div>
+    <p class="itemPrice"><%= price %>&dollar;</p>
+  </a>
 </div>

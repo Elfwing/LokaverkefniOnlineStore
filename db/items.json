@@ -9,11 +9,11 @@
   },
   {
     "id": 2,
-    "name": "Slime Squid Potion",
-    "image": "images/potionSquid.jpg",
-    "priceUsd": 29.99,
-    "starRating": 3.0,
-    "category": "Potions"
+    "name": "Golden Dragon Ring",
+    "image": "images/dragonRing.jpg",
+    "priceUsd": 999.99,
+    "starRating": 3.5,
+    "category": "Jewelry"
   },
   {
     "id": 3,
@@ -21,14 +21,14 @@
     "image": "images/wingedRaven.jpg",
     "priceUsd": 59.99,
     "starRating": 4.0,
-    "category": "Potions"
+    "category": "Animal"
   },
   {
     "id": 4,
     "name": "Phoenix Feather Quill",
     "image": "images/phoenixFeather.jpg",
     "priceUsd": 14.99,
-    "starRating": 4.0,
+    "starRating": 5.0,
     "category": "Objects"
   },
   {
@@ -39,9 +39,9 @@
     "starRating": 4.5,
     "category": "Clothing"
   },
-  { 
+  {
     "id": 6,
-    "name": "Elixir of Eternal Youth",
+    "name": "Elixir of +Eternal Youth",
     "image": "images/youthElixir.jpg",
     "priceUsd": 199.99,
     "starRating": 5.0,
@@ -50,33 +50,33 @@
   {
     "id": 7,
     "name": "Mystic Moon Pendant",
-    "image": "path/to/mystic_moon_pendant.jpg",
+    "image": "images/moonPendant.jpg",
     "priceUsd": 39.99,
     "starRating": 3.5,
     "category": "Jewelry"
   },
   {
     "id": 8,
-    "name": "Goblet of Dreams",
-    "image": "path/to/dreams_goblet.jpg",
+    "name": "Goblet of Infinity",
+    "image": "images/infinityGoblet.jpg",
     "priceUsd": 29.99,
-    "starRating": 4.0,
-    "category": "Jewelry"
+    "starRating": 2.0,
+    "category": "Objects"
   },
   {
     "id": 9,
     "name": "Oracle's Mirror",
-    "image": "path/to/oracles_mirror.jpg",
-    "priceUsd": 59.99,
-    "starRating": 4.5,
+    "image": "images/oraclesMirror.jpg",
+    "priceUsd": 249.99,
+    "starRating": 3.5,
     "category": "Objects"
   },
   {
     "id": 10,
-    "name": "Golden Dragon Ring",
-    "image": "path/to/dragon_ring.jpg",
-    "priceUsd": 79.99,
-    "starRating": 3.5,
-    "category": "Jewelry"
+    "name": "Slime Squid Potion",
+    "image": "images/potionSquid.jpg",
+    "priceUsd": 29.99,
+    "starRating": 3.0,
+    "category": "Potions"
   }
 ]
