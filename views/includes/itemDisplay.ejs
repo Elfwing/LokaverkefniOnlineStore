@@ -1,14 +1,15 @@
 <div class="itemDiv">
-  <a href="">
-    <img src="<%=image%>" alt="" class="itemImage" />
+  <a href="/itemDetails?itemName=<%=itemName%>">
+    <img src="images/<%=itemName%>.jpg" alt="" class="itemImage" />
     <p class="itemName" title="<%=name%>"><%= name %></p>
     <div class="starS">
       <% for (let i = 0; i < star; i++) { %> <% if (i+1 > star) { %>
-      <span class="material-symbols-outlined">star_half</span>
+      <span class="material-symbols-outlined star">star_half</span>
       <% } else { %>
-      <span class="material-symbols-outlined">star</span>
+      <span class="material-symbols-outlined star">star</span>
       <% } %> <% } %>
     </div>
     <p class="itemPrice"><%= price %>&dollar;</p>
+    <button class="addCart">Add to Cart</button>
   </a>
 </div>

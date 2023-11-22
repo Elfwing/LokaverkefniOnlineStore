@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Fire Tail Cat",
-    "image": "images/magicCat.jpg",
+    "itemName": "magicCat",
     "priceUsd": 99.99,
     "starRating": 4.5,
     "category": "Animal"
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "name": "Golden Dragon Ring",
-    "image": "images/dragonRing.jpg",
+    "itemName": "dragonRing",
     "priceUsd": 999.99,
     "starRating": 3.5,
     "category": "Jewelry"
@@ -18,7 +18,7 @@
   {
     "id": 3,
     "name": "Multi Winged Raven",
-    "image": "images/wingedRaven.jpg",
+    "itemName": "wingedRaven",
     "priceUsd": 59.99,
     "starRating": 4.0,
     "category": "Animal"
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "name": "Phoenix Feather Quill",
-    "image": "images/phoenixFeather.jpg",
+    "itemName": "phoenixFeather",
     "priceUsd": 14.99,
     "starRating": 5.0,
     "category": "Objects"
@@ -34,7 +34,7 @@
   {
     "id": 5,
     "name": "Sorcerer's Robe of Shadows",
-    "image": "images/shadowRobe.jpg",
+    "itemName": "shadowRobe",
     "priceUsd": 69.99,
     "starRating": 4.5,
     "category": "Clothing"
@@ -42,7 +42,7 @@
   {
     "id": 6,
     "name": "Elixir of +Eternal Youth",
-    "image": "images/youthElixir.jpg",
+    "itemName": "youthElixir",
     "priceUsd": 199.99,
     "starRating": 5.0,
     "category": "Potions"
@@ -50,7 +50,7 @@
   {
     "id": 7,
     "name": "Mystic Moon Pendant",
-    "image": "images/moonPendant.jpg",
+    "itemName": "moonPendant",
     "priceUsd": 39.99,
     "starRating": 3.5,
     "category": "Jewelry"
@@ -58,7 +58,7 @@
   {
     "id": 8,
     "name": "Goblet of Infinity",
-    "image": "images/infinityGoblet.jpg",
+    "itemName": "infinityGoblet",
     "priceUsd": 29.99,
     "starRating": 2.0,
     "category": "Objects"
@@ -66,7 +66,7 @@
   {
     "id": 9,
     "name": "Oracle's Mirror",
-    "image": "images/oraclesMirror.jpg",
+    "itemName": "oraclesMirror",
     "priceUsd": 249.99,
     "starRating": 3.5,
     "category": "Objects"
@@ -74,7 +74,7 @@
   {
     "id": 10,
     "name": "Slime Squid Potion",
-    "image": "images/potionSquid.jpg",
+    "itemName": "potionSquid",
     "priceUsd": 29.99,
     "starRating": 3.0,
     "category": "Potions"

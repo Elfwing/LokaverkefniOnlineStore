@@ -8,6 +8,8 @@ import { router as frontPageRouter } from "./routes/index.js";
 import { router as loginRouter } from "./routes/login.js";
 import { router as registerRouter } from "./routes/register.js";
 import { router as filterRouter } from "./routes/filter.js";
+import { router as itemDetailsRouter } from "./routes/itemDetails.js";
+
 
 const app = express();
 dotenv.config();
@@ -46,6 +48,7 @@ app.use("/", frontPageRouter);
 app.use("/login", loginRouter);
 app.use("/register", registerRouter);
 app.use("/filter", filterRouter);
+app.use("/itemDetails", itemDetailsRouter);
 
 // errors: page not found
 app.use((req, res, next) => {

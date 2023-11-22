@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=	" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="css/defaultPage.css" />
-    <link rel="stylesheet" href="css/gridIndex.css" />
+    <link rel="stylesheet" href="css/gridDefault.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/itemDislplay.css" />
     <title>Document</title>
@@ -14,7 +14,7 @@
     <div class="header"><%- include("includes/header",{categorys: categorys}) %></div>
     <div class="main">
       <% for (let i = 0; i < filtered.length; i++) { %> <% const item = filtered[i] %>
-      <%-include("includes/itemDisplay", {name: item.name, image: item.image,
+      <%-include("includes/itemDisplay", {name: item.name, itemName: item.itemName,
       price: item.priceUsd, star: item.starRating}) %> <% } %>
     </div>
   </body>

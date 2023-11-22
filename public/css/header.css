@@ -31,21 +31,35 @@
   color: #b49a63;
 }
 
+.loginButton {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+.cart {
+  font-size: 50px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
 /* Change the direction of the flex items to be in a column */
-@media (max-width: 800px) {
+@media (max-width: 900px) {
+  .loginButton {
+    position: relative;
+    top: -15px;
+    left: 10px;
+  }
+
+  .cart {
+    position: static;
+    margin: 15px;
+  }
+
   .navMenu {
     flex-direction: column;
     text-align: center;
     font-size: 1.6em;
   }
-}
-
-.loginButton:hover {
-  padding: 10px 25px;
-  color: #a8a296;
-  background-color: #574b27;
-  transition: 1s;
-}
-.cart {
-  font-size: 50px;
 }
