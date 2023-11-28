@@ -6,14 +6,21 @@ import fs from "fs";
 const router = express.Router();
 
 router.get("/", (req, res) => {
+  const itemName = req.query.itemName;
   const file = fs.readFileSync("./db/items.json");
   const items = JSON.parse(file);
-  let categorys = new Set()
-  for (let i = 0; i < items.length; i++){
-    categorys.add(items[i].category)
+  let itemShown;
+  let categorys = new Set();
+  for (let i = 0; i < items.length; i++) {
+    categorys.add(items[i].category);
   }
-  const title = "Sam";
-  res.render("itemDetails", { title, categorys });
+  for (let i = 0; i < items.length; i++) {
+    if (itemName == items[i].itemName) {
+      itemShown = items[i];
+    }
+  }
+  const title = itemShown.name;
+  res.render("itemDetails", { title, itemShown, categorys });
 });
 
 export { router };

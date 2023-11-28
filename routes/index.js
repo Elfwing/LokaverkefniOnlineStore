@@ -6,7 +6,7 @@ import fs from "fs";
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  const title = "Album";
+  const title = "W&WE";
   const file = fs.readFileSync("./db/items.json");
   const items = JSON.parse(file);
   let categorys = new Set()

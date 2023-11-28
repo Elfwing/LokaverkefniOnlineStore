@@ -3,6 +3,7 @@
     "id": 1,
     "name": "Fire Tail Cat",
     "itemName": "magicCat",
+    "description": "A magical cat with a two fiery tails. Perfect companion for wizards and sorcerers.",
     "priceUsd": 99.99,
     "starRating": 4.5,
     "category": "Animal"
@@ -11,6 +12,7 @@
     "id": 2,
     "name": "Golden Dragon Ring",
     "itemName": "dragonRing",
+    "description": "A majestic ring adorned with a two golden dragon, symbolizing power and strength.",
     "priceUsd": 999.99,
     "starRating": 3.5,
     "category": "Jewelry"
@@ -19,6 +21,7 @@
     "id": 3,
     "name": "Multi Winged Raven",
     "itemName": "wingedRaven",
+    "description": "A mysterious raven with multiple wings, embodying the secrets of the night. Perfect for those who appreciate enigmatic creatures.",
     "priceUsd": 59.99,
     "starRating": 4.0,
     "category": "Animal"
@@ -27,6 +30,7 @@
     "id": 4,
     "name": "Phoenix Feather Quill",
     "itemName": "phoenixFeather",
+    "description": "A quill crafted from the magical feathers of a phoenix, known for enhancing creativity.",
     "priceUsd": 14.99,
     "starRating": 5.0,
     "category": "Objects"
@@ -35,6 +39,7 @@
     "id": 5,
     "name": "Sorcerer's Robe of Shadows",
     "itemName": "shadowRobe",
+    "description": "A dark robe that grants its wearer the ability to manipulate shadows. Essential for stealthy sorcerers.",
     "priceUsd": 69.99,
     "starRating": 4.5,
     "category": "Clothing"
@@ -43,6 +48,7 @@
     "id": 6,
     "name": "Elixir of +Eternal Youth",
     "itemName": "youthElixir",
+    "description": "A potent elixir that bestows eternal youth upon the drinker.",
     "priceUsd": 199.99,
     "starRating": 5.0,
     "category": "Potions"
@@ -51,6 +57,7 @@
     "id": 7,
     "name": "Mystic Moon Pendant",
     "itemName": "moonPendant",
+    "description": "A pendant featuring a mystic moon, radiating a calming aura. Ideal for those attuned to lunar energies.",
     "priceUsd": 39.99,
     "starRating": 3.5,
     "category": "Jewelry"
@@ -59,6 +66,7 @@
     "id": 8,
     "name": "Goblet of Infinity",
     "itemName": "infinityGoblet",
+    "description": "A magical goblet with the power to endlessly refill itself. Perfect for banquets and celebrations",
     "priceUsd": 29.99,
     "starRating": 2.0,
     "category": "Objects"
@@ -67,6 +75,7 @@
     "id": 9,
     "name": "Oracle's Mirror",
     "itemName": "oraclesMirror",
+    "description": "A mystical mirror that reveals glimpses of the future. Trusted by oracles and seers.",
     "priceUsd": 249.99,
     "starRating": 3.5,
     "category": "Objects"
@@ -75,6 +84,7 @@
     "id": 10,
     "name": "Slime Squid Potion",
     "itemName": "potionSquid",
+    "description": "A peculiar potion containing essence of slime squid, known for its transformative and unpredictable effects. Use with caution!",
     "priceUsd": 29.99,
     "starRating": 3.0,
     "category": "Potions"

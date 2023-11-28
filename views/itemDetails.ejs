@@ -6,10 +6,32 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="css/defaultPage.css" />
     <link rel="stylesheet" href="css/gridDefault.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="css/itemDetails.css">
+    <title><%= title %></title>
   </head>
   <body class="mainContainer">
-    <div class="header"><%- include("includes/header",{categorys: categorys}) %></div>
+    <div class="header">
+      <%- include("includes/header",{categorys: categorys}) %>
+    </div>
+    <div class="main">
+      <img src="images/<%=itemShown.itemName%>.jpg" alt="" class="itemImage" />
+      <div class="itemDiv">
+          <div class="itemDetail"><p class="itemName" title="<%=itemShown.name%>"><%= itemShown.name %></p>
+            <p class="price"><%= itemShown.priceUsd %>&dollar;</p>
+            <div class="stars">
+              <% for (let i = 0; i < star; i++) { %> <% if (i+1 > star) { %>
+              <span class="material-symbols-outlined star">star_half</span>
+              <% } else { %>
+              <span class="material-symbols-outlined star">star</span>
+              <% } %> <% } %>
+            </div>
+            <p class="description"><%= itemShown.description %></p>
+            <hr>
+            <button class="addCart">Add to Cart</button>
+            <input type="number" placeholder="Quantity">
+          </div>
+        </a>
+      </div>
+    </div>
   </body>
 </html>
-  
