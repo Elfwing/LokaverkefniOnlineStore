@@ -15,7 +15,8 @@
     <div class="main">
       <% for (let i = 0; i < items.length; i++) { %> <% const item = items[i] %>
       <%-include("includes/itemDisplay", {name: item.name, itemName: item.itemName,
-      price: item.priceUsd, star: item.starRating}) %> <% } %>
+        priceUsd: item.priceUsd, starRating: item.starRating}) %> <% } %>
     </div>
+    <div class="footer"><%- include("includes/footer") %></div>
   </body>
 </html>

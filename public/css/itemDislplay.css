@@ -1,5 +1,15 @@
 .itemImage {
   width: 100%;
+  border-radius: 2px;
+  filter: saturate(40%);
+  transition: 0.5s;
+}
+
+.itemImage:hover {
+  filter: none;
+  transition: 0.5s;
+  scale: 1.1;
+  margin-bottom: 20px;
 }
 
 .itemDiv {
@@ -26,9 +36,4 @@
 
 .itemPrice {
   float: left;
-}
-
-.addCart {
-  font-size: 16px;
-  margin-top: 10;
 }

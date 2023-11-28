@@ -46,11 +46,11 @@
   },
   {
     "id": 6,
-    "name": "Elixir of +Eternal Youth",
+    "name": "Elixir of Eternal Youth",
     "itemName": "youthElixir",
     "description": "A potent elixir that bestows eternal youth upon the drinker.",
     "priceUsd": 199.99,
-    "starRating": 5.0,
+    "starRating": 2.0,
     "category": "Potions"
   },
   {

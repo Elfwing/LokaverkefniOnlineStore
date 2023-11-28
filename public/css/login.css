@@ -1,0 +1,55 @@
+button {
+  float: right;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+button:hover {
+  padding: 12px 15px;
+}
+
+input {
+  display: block;
+  margin: auto;
+  border: 1px solid #cbc19f;
+  padding: 10px;
+  font-size: 20px;
+  margin: 20px auto;
+  border-radius: 5px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form {
+  margin: 75px 35%;
+  padding: 30px;
+  border: 2px solid #574b27;
+}
+/**can you give me css for input, and and input with the type date, 
+  make something happen on hover and have the colors different on the 
+  place holder text and make the colors complement rgb(238, 254, 255) **/
+
+input:hover {
+  border-color: #574b27;
+}
+
+input[type="date"] {
+  border: 1px solid #a8a296;
+  padding: 10px;
+  font-size: 20px;
+  color: #574b27;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="date"]:hover {
+  border-color: #574b27;
+}
+
+input[type="submit"] {
+  background-color: #a8a296;
+  color: #574b27;
+  width: 216px;
+}
+
+input::placeholder {
+  color: #574b27;
+}

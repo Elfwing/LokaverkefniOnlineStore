@@ -6,7 +6,6 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-columns: 18% [col-start];
   gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
 }
 
 .header {
@@ -18,4 +17,10 @@
   grid-column: 1 / 3;
   grid-row: 2;
   width: auto;
+}
+
+.footer {
+  grid-column: 1 / 3;
+  grid-row: 3;
+  height: auto;
 }

@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Alice",
+    "email": "alice@email.com",
+    "age": 32,
+    "username": "alice",
+    "password": "a1i2c3e4"
+  },
+  {
+    "id": 2,
+    "name": "Bob",
+    "email": "bob@outlook.com",
+    "age": 28,
+    "username": "bob",
+    "password": "b5o6b7"
+  },
+  {
+    "id": 3,
+    "name": "Charlie",
+    "email": "charlie@email.com",
+    "age": 25,
+    "username": "charlie",
+    "password": "c8h9a0r1"
+  },
+  {
+    "id": 4,
+    "name": "David",
+    "email": "david@email.com",
+    "age": 30,
+    "username": "david",
+    "password": "d2a3v4i5d"
+  },
+  {
+    "id": 5,
+    "name": "Eve",
+    "email": "eve@email.com",
+    "age": 33,
+    "username": "eve",
+    "password": "e6v7e8"
+  },
+  {
+    "id": 6,
+    "name": "Frank",
+    "email": "frank@outlook.com",
+    "age": 35,
+    "username": "frank",
+    "password": "f9r0a1n2k"
+  },
+  {
+    "id": 7,
+    "name": "Gina",
+    "email": "gina@email.com",
+    "age": 27,
+    "username": "gina",
+    "password": "g3i4n5a6"
+  },
+  {
+    "id": 8,
+    "name": "Harry",
+    "email": "harry@email.com",
+    "age": 31,
+    "username": "harry",
+    "password": "h7a8r9r0y"
+  },
+  {
+    "id": 9,
+    "name": "Iris",
+    "email": "Iris@email.com",
+    "age": 29,
+    "username": "Iris",
+    "password": "i1r2i3s4"
+  },
+  {
+    "id": 10,
+    "name": "Jack",
+    "email": "jack@yahoo.com",
+    "age": 26,
+    "username": "jack",
+    "password": "j5a6c7k8"
+  }
+]
