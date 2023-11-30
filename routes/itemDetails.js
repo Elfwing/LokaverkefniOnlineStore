@@ -12,9 +12,6 @@ router.get("/", (req, res) => {
   let itemShown;
   let categorys = new Set();
   for (let i = 0; i < items.length; i++) {
-    categorys.add(items[i].category);
-  }
-  for (let i = 0; i < items.length; i++) {
     if (itemName == items[i].itemName) {
       itemShown = items[i];
     }
