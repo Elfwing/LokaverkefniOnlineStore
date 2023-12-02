@@ -3,7 +3,8 @@
     <img src="images/<%=itemName%>.jpg" alt="" class="itemImage" />
     <p class="itemName" title="<%=name%>"><%= name %></p>
     <div class="stars">
-      <% for (let i = 0; i < starRating; i++) { %> <% if (i+1 > starRating) { %>
+      <% for (let i = 0; i < starRating; i++) { %> 
+      <% if (i+1 > starRating) { %>
       <span class="material-symbols-outlined star">star_half</span>
       <% } else { %>
       <span class="material-symbols-outlined star">star</span>

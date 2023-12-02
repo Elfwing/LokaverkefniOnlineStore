@@ -25,10 +25,17 @@
             </div>
             <p class="description"><%= itemShown.description %></p>
             <hr>
-            <form action="/login">
-              <input type="submit" class="addCart" value="Add to Cart"></input>
-              <input type="number" placeholder="Quantity">
-            </form>
+            <% if (isLogedInn != true){ %>
+              <form action="/login">
+                <input type="submit" class="addCart" value="Add to Cart"></input>
+                <input type="number" placeholder="Quantity">
+              </form>
+            <% }else{ %>
+              <form action="/addToCart">
+                <input type="submit" class="addCart" value="Add to Cart"></input>
+                <input type="number" placeholder="Quantity" required>
+              </form>
+              <% }; %>
           </div>
         </a>
       </div>

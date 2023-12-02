@@ -9,6 +9,7 @@ router.get("/", (req, res) => {
   const itemName = req.query.itemName;
   const file = fs.readFileSync("./db/items.json");
   const items = JSON.parse(file);
+  const isLogedInn = req.session.isLogedInn
   let itemShown;
   let categorys = new Set();
   for (let i = 0; i < items.length; i++) {
@@ -17,7 +18,7 @@ router.get("/", (req, res) => {
     }
   }
   const title = itemShown.name;
-  res.render("itemDetails", { title, itemShown, categorys });
+  res.render("itemDetails", { title, itemShown, categorys, isLogedInn });
 });
 
 export { router };

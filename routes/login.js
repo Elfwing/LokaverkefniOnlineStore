@@ -1,6 +1,7 @@
 import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
+import bcrypt from "bcrypt";
 import fs from "fs";
 
 const router = express.Router();
@@ -15,18 +16,20 @@ router.post("/", (req, res) => {
   const users = JSON.parse(file);
   const title = "Login";
   for (let i = 0; i < users.length; i++) {
-    if (req.body.identifier == users[i].username || req.body.identifier == users[i].email){
-      console.log("hi")
-      if(bcrypt.compareSync(req.body.password, users[i].password)){
+    if (
+      req.body.identifier == users[i].username ||
+      req.body.identifier == users[i].email
+    ) {
+      if (bcrypt.compareSync(req.body.password, users[i].password)) {
+        req.session.user = users[i].id;
+        req.session.isLogedInn = true;
         res.redirect("/");
-        return
-      } 
+        return;
+      }
     }
-    else{
-      res.render("login", { title });
-      return
-    }  
   }
+  res.redirect("/login");
+  return;
 });
 
 export { router };

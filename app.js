@@ -6,6 +6,7 @@ import session from "express-session";
 import { fileURLToPath } from "url";
 import { router as frontPageRouter } from "./routes/index.js";
 import { router as loginRouter } from "./routes/login.js";
+import { router as logoutRouter } from "./routes/logout.js";
 import { router as registerRouter } from "./routes/register.js";
 import { router as filterRouter } from "./routes/filter.js";
 import { router as itemDetailsRouter } from "./routes/itemDetails.js";
@@ -46,6 +47,7 @@ app.use(
 //routers
 app.use("/", frontPageRouter);
 app.use("/login", loginRouter);
+app.use("/logout", logoutRouter);
 app.use("/register", registerRouter);
 app.use("/filter", filterRouter);
 app.use("/itemDetails", itemDetailsRouter);
