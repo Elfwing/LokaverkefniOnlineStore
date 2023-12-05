@@ -16,10 +16,12 @@ router.post("/", (req, res) => {
   const users = JSON.parse(file);
   const title = "Login";
   for (let i = 0; i < users.length; i++) {
+    //checks it user email/username exist
     if (
       req.body.identifier == users[i].username ||
       req.body.identifier == users[i].email
     ) {
+      //checks if password is correct
       if (bcrypt.compareSync(req.body.password, users[i].password)) {
         req.session.user = users[i];
         req.session.isLogedInn = true;

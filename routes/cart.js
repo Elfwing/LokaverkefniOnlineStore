@@ -17,6 +17,7 @@ router.get("/", (req, res) => {
   let categorys = new Set();
   for (let i = 0; i < items.length; i++) {
     categorys.add(items[i].category);
+    //finds the item in the cart
     if (cart) {
       if (items[i].itemName in cart) {
         itemsInCart.push(items[i]);

@@ -29,8 +29,10 @@ router.post("/", (req, res) => {
     req.session.itemsInCart = itemlist;
   }
   if (itemName in req.session.itemsInCart){
+    //adds cart if item is already the
     req.session.itemsInCart[itemName] += quantity;
   } else {
+    //adds a new item to cart
     req.session.itemsInCart[itemName] = quantity;
   }
   res.redirect("/");

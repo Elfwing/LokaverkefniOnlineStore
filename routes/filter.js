@@ -15,6 +15,7 @@ router.get("/", (req, res) => {
   const filtered = [];
   for (let i = 0; i < items.length; i++) {
     categorys.add(items[i].category);
+    //only adds item in specified category to list
     if (items[i].category == categoryFilter) {
       filtered.push(items[i]);
     }

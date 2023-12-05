@@ -7,6 +7,7 @@ import fs from "fs";
 const router = express.Router();
 
 router.post("/", (req, res) => {
+  //remove item from cart
   let itemsInCart = req.session.itemsInCart;
   const itemRemove = req.query.itemRemove;
   delete itemsInCart[itemRemove];

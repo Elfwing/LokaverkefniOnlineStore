@@ -10,6 +10,7 @@ router.get("/", (req, res) => {
   const file = fs.readFileSync("./db/items.json");
   const items = JSON.parse(file);
   const isLogedInn = req.session.isLogedInn
+  //makes a set of all category from data file
   let categorys = new Set()
   for (let i = 0; i < items.length; i++){
     categorys.add(items[i].category)

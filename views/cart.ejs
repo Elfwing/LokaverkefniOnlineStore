@@ -17,12 +17,12 @@
       <%- include("includes/header",{categorys: categorys}) %>
     </div>
     <div class="main">
+      <!-- makes all cart item appears on page -->
       <% if (cart) {%> <% for (let i = 0; i < itemsInCart.length; i++) { %> <%
       const item = itemsInCart[i] %> <%-include("includes/itemInCart", {item:
       item, quantity: cart[item.itemName]}) %> <% } %> <% } %>
       <button class="checkout">Proceed to Checkout</button>
     </div>
-
     <div class="footer"><%- include("includes/footer") %></div>
   </body>
 </html>

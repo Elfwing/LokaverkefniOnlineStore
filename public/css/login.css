@@ -1,3 +1,4 @@
+/**css for both register and login**/
 button {
   float: right;
   font-size: 20px;
@@ -24,9 +25,6 @@ form {
   padding: 30px;
   border: 2px solid #574b27;
 }
-/**can you give me css for input, and and input with the type date, 
-  make something happen on hover and have the colors different on the 
-  place holder text and make the colors complement rgb(238, 254, 255) **/
 
 input:hover {
   border-color: #574b27;

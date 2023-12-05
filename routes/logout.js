@@ -10,6 +10,7 @@ const router = express.Router();
 router.get("/", (req, res) => {
   const file = fs.readFileSync("./db/users.json");
   const users = JSON.parse(file);
+  //make it so user is no longer logged in
   req.session.user = undefined;
   req.session.itemsInCart = undefined;
   req.session.isLogedInn = false;

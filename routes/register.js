@@ -16,6 +16,7 @@ router.post("/", (req, res) => {
   const users = JSON.parse(file);
   const passwordHash = bcrypt.hashSync(req.body.password, 10);
   users.push({
+    //add data to json file
     id: users[users.length - 1].id + 1,
     name: req.body.name,
     email: req.body.email,
@@ -23,6 +24,7 @@ router.post("/", (req, res) => {
     username: req.body.username,
     password: passwordHash,
   });
+  //logsin user
   req.session.isLogedInn = true;
   req.session.user = users[users.length-1];
   file = JSON.stringify(users);
