@@ -1,10 +1,11 @@
 <link rel="stylesheet" href="css/header.css" />
-<span class="material-symbols-outlined cart"> shopping_cart </span>
 <% if (isLogedInn != true){ %>
+  <span class="material-symbols-outlined cart"> shopping_cart </span>
   <a href="/login"><button class="loginButton">Login</button></a>
 <% }else{ %>
+  <a href="/cart"><span class="material-symbols-outlined cart"> shopping_cart </span></a>
   <a href="/logout"><button class="loginButton">Logout</button></a>
-  <% }; %>
+<% }; %>
 <a href="/" class="title"><h1>The Witchcraft & Wizardry Emporium</h1></a>
 <div class="navMenu">
   <% categorys.forEach((i) => { %>

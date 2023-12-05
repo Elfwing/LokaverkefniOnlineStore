@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=	" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="css/defaultPage.css" />
+    <link rel="stylesheet" href="css/gridDefault.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/itemDislplay.css" />
+    <title><%= title %></title>
+  </head>
+  <body class="mainContainer">
+    <div class="header">
+      <%- include("includes/header",{categorys: categorys}) %>
+    </div>
+    <div class="main"><% for (let i = 0; i < items.length; i++) { %> 
+      <% const item = items[i] %>
+      <%-include("includes/itemDisplay", {name: item.name, itemName: item.itemName,
+        priceUsd: item.priceUsd, starRating: item.starRating}) %> <% } %></div>
+    <div class="footer"><%- include("includes/footer") %></div>
+  </body>
+</html>

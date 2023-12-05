@@ -31,9 +31,9 @@
                 <input type="number" placeholder="Quantity">
               </form>
             <% }else{ %>
-              <form action="/addToCart">
+              <form action="/itemDetails?itemName=<%=itemShown.itemName%>" method="POST">
                 <input type="submit" class="addCart" value="Add to Cart"></input>
-                <input type="number" placeholder="Quantity" required>
+                <input type="number" id="quantity" name="quantity" placeholder="Quantity" required>
               </form>
               <% }; %>
           </div>

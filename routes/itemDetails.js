@@ -21,4 +21,22 @@ router.get("/", (req, res) => {
   res.render("itemDetails", { title, itemShown, categorys, isLogedInn });
 });
 
+router.post("/", (req, res) => {
+  const quantity = +req.body.quantity;
+  const itemName = req.query.itemName;
+  if (!req.session.itemsInCart){
+    let itemlist = new Object();
+    req.session.itemsInCart = itemlist;
+  }
+  if (itemName in req.session.itemsInCart){
+    req.session.itemsInCart[itemName] += quantity;
+  } else {
+    req.session.itemsInCart[itemName] = quantity;
+  }
+  
+  console.log(req.session.itemsInCart)
+  res.redirect("/");
+});
+
+
 export { router };

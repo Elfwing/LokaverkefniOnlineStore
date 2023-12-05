@@ -10,6 +10,7 @@ import { router as logoutRouter } from "./routes/logout.js";
 import { router as registerRouter } from "./routes/register.js";
 import { router as filterRouter } from "./routes/filter.js";
 import { router as itemDetailsRouter } from "./routes/itemDetails.js";
+import { router as cartRouter } from "./routes/cart.js";
 
 
 const app = express();
@@ -51,6 +52,7 @@ app.use("/logout", logoutRouter);
 app.use("/register", registerRouter);
 app.use("/filter", filterRouter);
 app.use("/itemDetails", itemDetailsRouter);
+app.use("/cart", cartRouter);
 
 // errors: page not found
 app.use((req, res, next) => {

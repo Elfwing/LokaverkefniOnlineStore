@@ -15,22 +15,22 @@ router.post("/", (req, res) => {
   let file = fs.readFileSync("./db/users.json");
   const users = JSON.parse(file);
   const passwordHash = bcrypt.hashSync(req.body.password, 10);
-  req.session.user = users.length+1;
-  req.session.isLogedInn = true;
   users.push({
-    "id":users.length+1,  
-    "name": req.body.name,
-    "email":req.body.email,
-    "age":req.body.age,
-    "username":req.body.username,
-    "password":passwordHash
-});
-file = JSON.stringify(users);
-fs.writeFile("./db/users.json", file, err => {
-  // error checking
-  if(err) throw err;
-});
-res.redirect("/");
+    id: users[users.length - 1].id + 1,
+    name: req.body.name,
+    email: req.body.email,
+    age: req.body.age,
+    username: req.body.username,
+    password: passwordHash,
+  });
+  req.session.isLogedInn = true;
+  req.session.user = users[users.length-1];
+  file = JSON.stringify(users);
+  fs.writeFile("./db/users.json", file, (err) => {
+    // error checking
+    if (err) throw err;
+  });
+  res.redirect("/");
 });
 
 export { router };

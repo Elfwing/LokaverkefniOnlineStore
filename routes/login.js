@@ -21,7 +21,7 @@ router.post("/", (req, res) => {
       req.body.identifier == users[i].email
     ) {
       if (bcrypt.compareSync(req.body.password, users[i].password)) {
-        req.session.user = users[i].id;
+        req.session.user = users[i];
         req.session.isLogedInn = true;
         res.redirect("/");
         return;
