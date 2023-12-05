@@ -11,6 +11,7 @@ import { router as registerRouter } from "./routes/register.js";
 import { router as filterRouter } from "./routes/filter.js";
 import { router as itemDetailsRouter } from "./routes/itemDetails.js";
 import { router as cartRouter } from "./routes/cart.js";
+import { router as removeRouter } from "./routes/remove.js";
 
 
 const app = express();
@@ -53,6 +54,7 @@ app.use("/register", registerRouter);
 app.use("/filter", filterRouter);
 app.use("/itemDetails", itemDetailsRouter);
 app.use("/cart", cartRouter);
+app.use("/remove", removeRouter);
 
 // errors: page not found
 app.use((req, res, next) => {

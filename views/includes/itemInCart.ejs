@@ -1,0 +1,11 @@
+<div class="item">
+  <img src="images/<%=item.itemName%>.jpg" alt="Apple" />
+  <div>
+    <p class="itemTitle"><%=item.name%></p>
+    <p class="itemText">
+      Quantity: <%= quantity %>, Price in Total: <%=
+      quantity*item.priceUsd%>&dollar;
+    </p>
+    <form action="/remove?itemRemove=<%=item.itemName%>" method="POST"><input class="remove" type="submit" value="Remove"></input></form>
+  </div>
+</div>

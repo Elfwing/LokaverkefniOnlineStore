@@ -33,8 +33,6 @@ router.post("/", (req, res) => {
   } else {
     req.session.itemsInCart[itemName] = quantity;
   }
-  
-  console.log(req.session.itemsInCart)
   res.redirect("/");
 });
 
