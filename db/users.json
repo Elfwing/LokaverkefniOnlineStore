@@ -134,5 +134,13 @@
     "age": "18",
     "username": "Eva",
     "password": "$2b$10$RLCHkmhzEspgdpFUMaGri.vpjf/MRvdh1DjaOCliHV4DuKWNGl53q"
+  },
+  {
+    "id": 18,
+    "name": "Þorarinn",
+    "email": "toti@gmail.yahoo",
+    "age": "6",
+    "username": "Toti",
+    "password": "$2b$10$NuqqfZjkiJCu2RsfBiFxLOkERzjY85pjEviQAsVwpE8/4Q/uvnus."
   }
 ]
